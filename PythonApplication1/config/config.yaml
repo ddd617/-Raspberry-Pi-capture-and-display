@@ -1,0 +1,6 @@
+# 摄像头与流参数
+camera_device: 0
+width: 640
+height: 480
+fps: 30
+server_port: 5000
