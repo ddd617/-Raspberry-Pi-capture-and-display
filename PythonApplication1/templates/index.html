@@ -1,0 +1,13 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>实时监控画面</title>
+</head>
+<body>
+    <h1 style="text-align:center;">我的摄像头监控</h1>
+    <div style="text-align:center;">
+        <!-- 这里的 src 对应 app.py 里的 /video_feed 路由 -->
+        < img src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+</body>
+</html>

@@ -21,7 +21,28 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="capture\capture.py" />
+    <Compile Include="display\local_display.py" />
+    <Compile Include="display\rtsp_client.py" />
+    <Compile Include="display\test_display.py" />
     <Compile Include="PythonApplication1.py" />
+    <Compile Include="stream\http_mjpeg.py" />
+    <Compile Include="stream\measure_latency_mjpeg.py" />
+    <Compile Include="stream\rtsp_server.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config\config.yaml" />
+    <Content Include="deploy\raspberry_pi_stream.service" />
+    <Content Include="deploy\README.md" />
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="capture\" />
+    <Folder Include="config\" />
+    <Folder Include="deploy\" />
+    <Folder Include="display\" />
+    <Folder Include="stream\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
